@@ -1,5 +1,6 @@
 from question_model import Question
 from data import question_data
+from quiz_brain import QuizBrain
 
 question_bank = []
 for question in question_data:
@@ -12,4 +13,8 @@ for question in question_data:
 
 # print(question_bank[3].text)
 # print(question_bank[3].answer)
-
+quiz = QuizBrain(question_bank) # QuizBrain have attribute of question_number default = 0, and
+# question_list with all questions object in list
+quiz.next_question() # quiz variable contain object QuizBrain with method next_question
+# which do what?
+# which print question_number equal 0 and question
